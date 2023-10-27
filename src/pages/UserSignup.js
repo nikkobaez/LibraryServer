@@ -18,23 +18,24 @@ const UserSignup = () => {
         axios.post('/api/usercheck', {
             username: username
         }).then((response) => {
-            if (response.data.message === "User already exists") {
-                setSignupStatus("User already exists");
-            } else {
-                axios.post('/api/usersignup', {
-                    userid: uuid(),
-                    firstname: firstname,
-                    lastname: lastname,
-                    status: status,
-                    username: username, 
-                    password: password,
-                }).then((response) => {
-                    console.log(response);
-                }).catch((error) => {
-                    console.error(error);
-                });
-                navigate("/user-login")
-            }
+            console.log(response);
+            // if (response.data.message === "User already exists") {
+            //     setSignupStatus("User already exists");
+            // } else {
+            //     axios.post('/api/usersignup', {
+            //         userid: uuid(),
+            //         firstname: firstname,
+            //         lastname: lastname,
+            //         status: status,
+            //         username: username, 
+            //         password: password,
+            //     }).then((response) => {
+            //         console.log(response);
+            //     }).catch((error) => {
+            //         console.error(error);
+            //     });
+            //     navigate("/user-login")
+            // }
         }).catch((error) => {
             console.log(error)
         });
