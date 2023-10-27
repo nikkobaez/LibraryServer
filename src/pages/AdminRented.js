@@ -81,7 +81,7 @@ const AdminRented = () => {
                                     <p className="bg-[#E1EAFF] h-12 w-12 rounded-full flex justify-center items-center"> {item.type[0]}</p>
                                     <p className="flex w-1/5"> {item.title}</p>
                                     <p className="flex w-1/5"> {item.name} </p>
-                                    <p className="flex w-1/5"> {item.rentedid} </p>
+                                    <p className="flex w-1/5"> {item.rentedid.substring(0, 19) + "..."} </p>
                                 </div>
                             ))}
                         </>
@@ -96,7 +96,7 @@ const AdminRented = () => {
                                     <p className="flex w-1/5"> {item.title}</p>
                                     <p className="flex w-1/5"> {item.author} </p>
                                     <p className="flex w-1/5"> {item.name} </p>
-                                    <p className="flex w-1/5"> {item.rentedid} </p>
+                                    <p className="flex w-1/5"> {item.rentedid.substring(0, 19) + "..."} </p>
                                 </div>
                             ))}
                         </>
@@ -111,7 +111,7 @@ const AdminRented = () => {
                                     <p className="flex w-1/5"> {item.title}</p>
                                     <p className="flex w-1/5"> {item.author} </p>
                                     <p className="flex w-1/5"> {item.name} </p>
-                                    <p className="flex w-1/5"> {item.rentedid} </p>
+                                    <p className="flex w-1/5"> {item.rentedid.substring(0, 19) + "..."} </p>
                                 </div>
                             ))}
                         </>
@@ -126,7 +126,7 @@ const AdminRented = () => {
                                     <p className="flex w-1/5"> {item.title}</p>
                                     <p className="flex w-1/5"> {item.author} </p>
                                     <p className="flex w-1/5"> {item.name} </p>
-                                    <p className="flex w-1/5"> {item.rentedid} </p>
+                                    <p className="flex w-1/5"> {item.rentedid.substring(0, 19) + "..."} </p>
                                 </div>
                             ))}
                         </>
