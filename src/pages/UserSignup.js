@@ -15,7 +15,7 @@ const UserSignup = () => {
 
     // User Sign Up Function
     const userSignup = async () => {
-        axios.post('/api/usercheck', {
+        axios.post('https://library-server-cosc3380-ee2497c0e61e.herokuapp.com/usersignup', {
             username: username
         }).then((response) => {
             console.log(response);
