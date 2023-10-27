@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useEffect, useContext } from 'react'
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import axios from 'axios';
@@ -15,7 +15,7 @@ const Success = () => {
         }).catch((error) => {
             console.log(error)
         })
-    }, [])
+    }, [currentCart, setCurrentCart])
 
     return (
         <div className="flex items-center justify-center w-screen h-screen">
