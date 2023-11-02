@@ -15,7 +15,6 @@ const AdminRented = () => {
     const books = rented.filter(item => item.type === "Book");
     const media = rented.filter(item => item.type === "Media");
     const devices = rented.filter(item => item.type === "Device");
-    const duedate = new Date();
 
     // Get All Items From Rented
     useEffect(() => {
