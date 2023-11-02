@@ -7,6 +7,10 @@ const Welcome = () => {
     const [showLoginModal, setShowLoginModal] = useState(false);
     const navigate = useNavigate();
 
+    // const futurems = new Date().getTime() + 86400000 * 7
+    // const futureDate = new Date(futurems);
+
+
     return (
         <div>
             <WelcomeNavbar showLoginModal={() => setShowLoginModal(true)}/>

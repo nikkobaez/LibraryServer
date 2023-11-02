@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import uuid from 'react-uuid';
 import axios from 'axios';
 
-const ProcessingButtons = ({item}) => {
+const AdminProcessingButtons = ({item}) => {
     const [isLate, setIsLate] = useState(false);
     const [isDamaged, setIsDamaged] = useState(false)
     
@@ -110,4 +110,4 @@ const ProcessingButtons = ({item}) => {
     )
 }
 
-export default ProcessingButtons
+export default AdminProcessingButtons
