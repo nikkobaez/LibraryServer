@@ -1,7 +1,6 @@
 import React from 'react'
 
 const AdminRentedButtons = ({item}) => {
-    const currentdate = new Date().getTim
     const duedate = new Date (item.duedatems)
 
     return (
