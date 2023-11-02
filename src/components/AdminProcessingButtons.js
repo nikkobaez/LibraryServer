@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import uuid from 'react-uuid';
-import axios from 'axios';
 
 const AdminProcessingButtons = ({item}) => {
     const [isLate, setIsLate] = useState(false);

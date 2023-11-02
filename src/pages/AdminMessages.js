@@ -22,7 +22,13 @@ const AdminMessages = () => {
 
 
   return (
-    <div>AdminMessages</div>
+    <div>
+        {messages.map((message) => (
+            <>
+                <p> {message.name} </p> 
+            </>
+        ))}
+    </div>
   )
 }
 
