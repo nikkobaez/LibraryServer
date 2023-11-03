@@ -27,20 +27,19 @@ const AdminProcessingButtons = ({item}) => {
 
         if (Math.round(dayscalculation) > 0 || isDamaged === true) {
 
-            // Calculate Late Fees
+            // Calculate Late and Damaged Fees
             if (Math.round(dayscalculation) > 14) {
                 lateamount = 300;
+                damagedamount = 0;
             } else {
                 lateamount = Math.round(dayscalculation) * 3
-            }
-
-            // Calculate Damaged Fees
-            if (isDamaged && item.type === "Book") {
-                damagedamount = 50;
-            } else if (isDamaged === true && item.type === "Media") {
-                damagedamount = 100;
-            } else if (isDamaged === true && item.type === "Device") {
-                damagedamount = 150;
+                if (isDamaged && item.type === "Book") {
+                    damagedamount = 50;
+                } else if (isDamaged === true && item.type === "Media") {
+                    damagedamount = 100;
+                } else if (isDamaged === true && item.type === "Device") {
+                    damagedamount = 150;
+                }
             }
 
             // Determine Product ID
