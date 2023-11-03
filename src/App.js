@@ -18,6 +18,7 @@ import UserProtectedRoute from "./components/UserProtectedRoute";
 import AdminMessages from "./pages/AdminMessages";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import AdminReports from "./pages/AdminReports";
 
 function App() {
     return (
@@ -70,6 +71,11 @@ function App() {
                     <Route path="/admin-dashboard-processing" element={
                         <AdminProtectedRoute>
                             <AdminProcessing/>
+                        </AdminProtectedRoute>
+                    }/>
+                    <Route path="/admin-dashboard-reports" element={
+                        <AdminProtectedRoute>
+                            <AdminReports/>
                         </AdminProtectedRoute>
                     }/>
                     <Route path="/admin-dashboard-messages" element={

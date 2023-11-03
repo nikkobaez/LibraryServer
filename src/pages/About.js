@@ -11,11 +11,34 @@ const About = () => {
         <div>
             <WelcomeNavbar showLoginModal={() => setShowLoginModal(true)}/>
 
-            <div className="flex flex-col items-center justify-center h-screen mt-5">
-                <h1>About Us</h1>
-                <p> Welcome to the Book Nook About Us page. We are a dedicated team of book enthusiasts working to provide you with the best resources for accessing the university library. </p>
-                <p> Learn more about our mission, services, and how we can assist you in your academic journey. </p>
-            </div>
+            <div>
+                <div>
+                    <h1>About</h1>
+                    <p>At Book Nook, our mission is to empower students, foster a love of reading, and promote lifelong learning. We are dedicated to providing equitable access to information and resources to all members of our community. </p>
+                </div>
+                <div>
+                    <h2>Our Mission</h2>
+                    <p>At Book Nook, our mission is to provide knowledge and services to our students and faculty. </p>
+                </div>
+                <div>
+                    <h2>What We Offer at Book Nook</h2>
+                </div>  
+
+                <div>
+                    <ul>
+                        <li>
+                            <h4>Vast Collection:</h4> 
+                            <p>Our library houses a diverse collection of books, e-books, audiobooks, and academic readings. Our collection of books caters to a wide range of books to improve your </p>
+                        </li>  
+                        <li>
+                            <h4> Wide range of technology: </h4>
+                        <p>If you do not have a tablet laptop or want to rent a projector for a one time use? 
+                      At Book Nook, our library has a vast amount of rentable devices, media and other technology devices to help. 
+                    </p>
+                  </li>
+                </ul>
+              </div>
+        </div> 
 
             {/* Login Modal */}
             {showLoginModal && (
