@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import React, {useState} from 'react';
 import { useNavigate } from "react-router-dom";
-import { FaXmark } from 'react-icons/fa6'
+import { FaXmark } from 'react-icons/fa6';
 import WelcomeNavbar from '../components/WelcomeNavbar'
 
-const Welcome = () => {
+const About = () => {
     const [showLoginModal, setShowLoginModal] = useState(false);
     const navigate = useNavigate();
 
@@ -12,15 +12,9 @@ const Welcome = () => {
             <WelcomeNavbar showLoginModal={() => setShowLoginModal(true)}/>
 
             <div className="flex flex-col items-center justify-center h-screen mt-5">
-                <h1>Welcome to Book Nook!</h1>
-                <div className="text-center">
-                    <p>The website to access the university library</p>
-                    <ul>
-                        <li>Home: brings you back to this page</li>
-                        <li>About: takes you to the about page</li>
-                        <li>Contact: allows you to contact employees for any questions or FAQs</li>
-                    </ul>
-                </div>
+                <h1>About Us</h1>
+                <p> Welcome to the Book Nook About Us page. We are a dedicated team of book enthusiasts working to provide you with the best resources for accessing the university library. </p>
+                <p> Learn more about our mission, services, and how we can assist you in your academic journey. </p>
             </div>
 
             {/* Login Modal */}
@@ -39,4 +33,4 @@ const Welcome = () => {
     )
 }
 
-export default Welcome
+export default About

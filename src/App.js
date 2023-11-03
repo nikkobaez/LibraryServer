@@ -17,6 +17,7 @@ import AdminProtectedRoute from "./components/AdminProtectedRoute";
 import UserProtectedRoute from "./components/UserProtectedRoute";
 import AdminMessages from "./pages/AdminMessages";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 function App() {
     return (
@@ -25,8 +26,9 @@ function App() {
                 <Routes>
                     {/* Basic Routes */}
                     <Route path="/" element={<Welcome />}/>
-                    <Route path="/success" element={<Success />}/>
+                    <Route path="/about" element={<About />}/>
                     <Route path="/contact" element={<Contact />}/>
+                    <Route path="/success" element={<Success />}/>
 
                     {/* User Routes */}
                     <Route path="/user-login" element={<UserLogin />}/>
