@@ -37,8 +37,8 @@ const AdminMessages = () => {
         <div className="flex flex-col gap-10 my-10">
             {/* Empty Content */}
             {messages.length === 0 && (
-                <div>
-                    There are no messages to be shown
+                <div className="flex items-center justify-center w-full my-10">
+                    No Messages
                 </div>
             )}
 
